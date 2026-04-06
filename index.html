@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="logo">Azz <span>Luxury</span></div>
         <ul class="nav-links">
             <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
@@ -27,19 +27,19 @@
     <!-- الصفحة الرئيسية -->
     <main id="home-page" class="page active">
         <section class="hero">
-            <div class="hero-content">
+            <div class="hero-content reveal">
                 <h1>تجربة تسوق فاخرة تبدأ من هنا</h1>
                 <p>نقدم لك تشكيلة استثنائية من المنتجات الراقية التي تعبر عن هويتك وتلبي تطلعاتك بأعلى معايير الجودة والأناقة.</p>
-                <button class="btn-gold" onclick="showPage('shop')">تسوق الآن</button>
+                <button class="btn-gold hover-glow" onclick="showPage('shop')">تسوق الآن</button>
             </div>
         </section>
 
-        <section class="featured">
-            <h2 class="section-title">المنتجات المميزة</h2>
+        <section class="featured section-padding">
+            <h2 class="section-title reveal">المنتجات المميزة</h2>
             <div class="product-grid" id="featured-grid"></div>
         </section>
 
-        <section class="promo">
+        <section class="promo reveal">
             <div class="promo-box">
                 <h2>لمسة من الفخامة تستحقها</h2>
                 <p>اكتشف مجموعتنا الجديدة من الإكسسوارات الفاخرة واستفد من عروضنا الحصرية.</p>
@@ -50,13 +50,14 @@
 
     <!-- صفحة المتجر -->
     <main id="shop-page" class="page">
-        <div class="shop-header">
+        <div class="shop-header reveal">
             <h2 class="section-title">المجموعة الكاملة</h2>
             <div class="filter-bar">
                 <button class="filter-btn active" data-filter="all">الكل</button>
                 <button class="filter-btn" data-filter="watches">الساعات</button>
                 <button class="filter-btn" data-filter="perfumes">العطور</button>
                 <button class="filter-btn" data-filter="accessories">الإكسسوارات</button>
+                <button class="filter-btn" data-filter="jewelry">المجوهرات</button>
             </div>
         </div>
         <div class="product-grid" id="shop-grid"></div>
@@ -64,12 +65,12 @@
 
     <!-- صفحة تفاصيل المنتج -->
     <main id="product-page" class="page">
-        <div class="product-details-container" id="product-details-container">
+        <div class="product-details-container reveal" id="product-details-container">
             <!-- يتم إضافة التفاصيل عبر الجافاسكربت -->
         </div>
         
-        <section class="related-products">
-            <h2 class="section-title">منتجات قد تنال إعجابك</h2>
+        <section class="related-products section-padding">
+            <h2 class="section-title reveal">منتجات قد تنال إعجابك</h2>
             <div class="product-grid" id="related-grid"></div>
         </section>
     </main>
@@ -86,16 +87,16 @@
         <div class="cart-footer">
             <div class="cart-total">
                 <span>الإجمالي المبدئي:</span>
-                <span id="total-price">0 ر.س</span>
+                <span id="total-price">0 د.ج</span>
             </div>
-            <button class="btn-gold full-width">إتمام الطلب</button>
+            <button class="btn-gold full-width hover-glow">إتمام الطلب</button>
         </div>
     </div>
     <div class="overlay" id="overlay" onclick="toggleCart()"></div>
 
     <!-- التذييل -->
     <footer>
-        <div class="footer-content">
+        <div class="footer-content reveal">
             <div class="footer-brand">
                 <h3>Azz <span>Luxury</span></h3>
                 <p>وجهتك الأولى للأناقة والتفرد. نجمع لك أفضل العلامات التجارية والقطع الحصرية في مكان واحد.</p>
@@ -121,13 +122,13 @@
                 <h4>تواصل معنا</h4>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
+        <div class="footer-bottom reveal">
             <p>&copy; 2026 Azz Luxury. جميع الحقوق محفوظة.</p>
+            <p class="developer-credit">تمت برمجة هذا الموقع من طرف <span class="dev-name">عزالدين قبي - Azzeddine Gobbi</span></p>
         </div>
     </footer>
 
