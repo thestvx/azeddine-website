@@ -14,8 +14,7 @@
         <div class="logo">Azz <span>Luxury</span></div>
         <ul class="nav-links">
             <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
-            <li><a href="#" onclick="showPage('shop')">المتجر</a></li>
-            <li><a href="#" onclick="showPage('shop')">التصنيفات</a></li>
+            <li><a href="#shop-section" onclick="showPage('home')">الكتالوج</a></li>
         </ul>
         <div class="nav-icons">
             <div class="cart-icon" onclick="toggleCart()">
@@ -25,43 +24,37 @@
         </div>
     </nav>
 
-    <!-- الصفحة الرئيسية -->
+    <!-- الصفحة الرئيسية والمتجر (مدموجة) -->
     <main id="home-page" class="page active">
         <section class="hero">
             <div class="hero-content reveal">
                 <h1>تجربة تسوق فاخرة تبدأ من هنا</h1>
                 <p>نقدم لك تشكيلة استثنائية من أرقى العلامات التجارية العالمية لتلبي تطلعاتك بأعلى معايير الجودة والأناقة.</p>
-                <button class="btn-gold hover-glow" onclick="showPage('shop')">تسوق الآن</button>
+                <a href="#shop-section" class="btn-gold hover-glow" style="display: inline-block;">تصفح الكتالوج</a>
             </div>
         </section>
 
-        <section class="featured section-padding">
-            <h2 class="section-title reveal">الإصدارات الحصرية</h2>
-            <div class="product-grid" id="featured-grid"></div>
-        </section>
-
-        <section class="promo reveal">
-            <div class="promo-box">
-                <h2>لمسة من الفخامة الحقيقية</h2>
-                <p>اكتشف مجموعتنا المختارة بعناية من الساعات السويسرية والعطور الفرنسية النادرة.</p>
-                <button class="btn-outline" onclick="showPage('shop')">تصفح الكتالوج</button>
-            </div>
-        </section>
-    </main>
-
-    <!-- صفحة المتجر -->
-    <main id="shop-page" class="page">
-        <div class="shop-header reveal">
-            <h2 class="section-title">المجموعة الكاملة</h2>
-            <div class="filter-bar">
+        <!-- قسم المتجر الرئيسي مع الفلاتر -->
+        <section class="shop-section section-padding" id="shop-section">
+            <h2 class="section-title reveal">المجموعة الكاملة</h2>
+            
+            <div class="filter-bar reveal">
                 <button class="filter-btn active" data-filter="all">الكل</button>
                 <button class="filter-btn" data-filter="watches">الساعات السويسرية</button>
                 <button class="filter-btn" data-filter="perfumes">العطور النيش</button>
                 <button class="filter-btn" data-filter="accessories">الإكسسوارات الفاخرة</button>
                 <button class="filter-btn" data-filter="jewelry">المجوهرات</button>
             </div>
-        </div>
-        <div class="product-grid" id="shop-grid"></div>
+
+            <div class="product-grid" id="main-grid"></div>
+        </section>
+
+        <section class="promo reveal">
+            <div class="promo-box">
+                <h2>لمسة من الفخامة الحقيقية</h2>
+                <p>اكتشف مجموعتنا المختارة بعناية من الساعات السويسرية والعطور الفرنسية النادرة المرفقة بشهادات الأصالة.</p>
+            </div>
+        </section>
     </main>
 
     <!-- صفحة تفاصيل المنتج -->
@@ -106,9 +99,8 @@
                 <h4>روابط سريعة</h4>
                 <ul>
                     <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
-                    <li><a href="#" onclick="showPage('shop')">المتجر</a></li>
+                    <li><a href="#shop-section" onclick="showPage('home')">الكتالوج</a></li>
                     <li><a href="#">الشهادات والضمان</a></li>
-                    <li><a href="#">خدمة الكونسيرج</a></li>
                 </ul>
             </div>
             <div class="footer-links">
