@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azz Luxury | وجهتك للفخامة</title>
+    <title>Azz Luxury | وجهتك للفخامة المطلقة</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- شريط التنقل الزجاجي -->
+    <!-- شريط التنقل -->
     <nav class="navbar" id="navbar">
-        <div class="logo">Azz <span>Luxury</span></div>
+        <div class="logo" onclick="showPage('home')">Azz <span>Luxury</span></div>
         <ul class="nav-links">
             <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
             <li><a href="#shop-section" onclick="showPage('home')">الكتالوج</a></li>
-            <li><a href="#features-section" onclick="showPage('home')">مميزاتنا</a></li>
+            <li><a href="#features-section" onclick="showPage('home')">خدمات النخبة</a></li>
+            <li><a href="#reviews-section" onclick="showPage('home')">آراء العملاء</a></li>
         </ul>
         <div class="nav-icons">
             <div class="cart-icon" onclick="toggleCart()">
                 <i class="fas fa-shopping-bag"></i>
-                <span class="cart-count">0</span>
+                <span class="cart-count" id="cart-badge">0</span>
             </div>
         </div>
     </nav>
@@ -31,61 +32,102 @@
         <section class="hero">
             <div class="hero-overlay"></div>
             <div class="hero-content reveal">
-                <span class="hero-subtitle">الإصدارات المحدودة ٢٠٢٦</span>
+                <span class="hero-subtitle">تشكيلة ربيع وصيف ٢٠٢٦</span>
                 <h1>اكتشف المعنى الحقيقي <span>للفخامة</span></h1>
-                <p>نقدم لك تشكيلة استثنائية من أرقى العلامات التجارية العالمية، منتقاة بعناية لتعكس ذوقك الرفيع ومكانتك.</p>
-                <a href="#shop-section" class="btn-gold hover-glow">تصفح المجموعة الحصرية</a>
+                <p>نقدم لك تشكيلة استثنائية من أرقى العلامات التجارية العالمية، منتقاة بعناية لتعكس ذوقك الرفيع ومكانتك الاجتماعية.</p>
+                <div class="hero-buttons">
+                    <a href="#shop-section" class="btn-gold hover-glow">تصفح المجموعة الحصرية</a>
+                    <a href="#features-section" class="btn-outline">اكتشف خدماتنا</a>
+                </div>
             </div>
-            <a href="#shop-section" class="scroll-down">
-                <i class="fas fa-chevron-down"></i>
-            </a>
+            <a href="#shop-section" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
         </section>
+
+        <!-- شريط الماركات المتحرك -->
+        <div class="brands-marquee">
+            <div class="marquee-content">
+                <span>ROLEX</span><span>•</span>
+                <span>CARTIER</span><span>•</span>
+                <span>PATEK PHILIPPE</span><span>•</span>
+                <span>AUDEMARS PIGUET</span><span>•</span>
+                <span>CHANEL</span><span>•</span>
+                <span>LOUIS VUITTON</span><span>•</span>
+                <span>HERMÈS</span><span>•</span>
+                <span>TOM FORD</span><span>•</span>
+                <span>ROLEX</span><span>•</span>
+                <span>CARTIER</span><span>•</span>
+                <span>PATEK PHILIPPE</span><span>•</span>
+                <span>AUDEMARS PIGUET</span>
+            </div>
+        </div>
 
         <!-- قسم الخدمات والمميزات -->
         <section class="features-section section-padding" id="features-section">
             <div class="features-grid reveal">
                 <div class="feature-card">
-                    <i class="fas fa-gem"></i>
+                    <div class="feature-icon"><i class="fas fa-certificate"></i></div>
                     <h3>أصالة مضمونة 100%</h3>
-                    <p>جميع قطعنا أصلية ومرفقة بشهادات الاعتماد والضمان الدولي من الدار المصنعة.</p>
+                    <p>جميع قطعنا أصلية وتأتيكم مباشرة من المصدر مع شهادات الاعتماد والضمان الدولي.</p>
                 </div>
                 <div class="feature-card">
-                    <i class="fas fa-shipping-fast"></i>
-                    <h3>شحن VIP مؤمن</h3>
-                    <p>توصيل سريع ومؤمن بالكامل لكافة ولايات الوطن عبر أسطولنا الخاص.</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-box-open"></i>
+                    <div class="feature-icon"><i class="fas fa-gem"></i></div>
                     <h3>تغليف ملكي</h3>
-                    <p>نولي اهتماماً بأدق التفاصيل لنجعل من لحظة فتح الصندوق تجربة لا تُنسى.</p>
+                    <p>نولي اهتماماً بأدق التفاصيل لنجعل من لحظة فتح الصندوق تجربة حسية لا تُنسى.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>شحن VIP مؤمن</h3>
+                    <p>توصيل فائق السرعة ومؤمن بالكامل لكافة ولايات الوطن عبر فرقنا الخاصة.</p>
                 </div>
             </div>
         </section>
 
-        <!-- قسم المتجر والفلترة -->
+        <!-- قسم المتجر -->
         <section class="shop-section section-padding" id="shop-section">
-            <h2 class="section-title reveal">المجموعة <span>الكاملة</span></h2>
-            
-            <div class="filter-bar reveal">
-                <button class="filter-btn active" data-filter="all">الكل</button>
-                <button class="filter-btn" data-filter="watches">ساعات</button>
-                <button class="filter-btn" data-filter="perfumes">عطور</button>
-                <button class="filter-btn" data-filter="accessories">إكسسوارات</button>
-                <button class="filter-btn" data-filter="jewelry">مجوهرات</button>
+            <div class="shop-header reveal">
+                <h2 class="section-title">الكتالوج <span>الفاخر</span></h2>
+                
+                <!-- أدوات الفلترة والبحث الموسعة -->
+                <div class="shop-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="ابحث عن ماركة، أو اسم منتج...">
+                    </div>
+                    <div class="sort-box">
+                        <select id="sort-select">
+                            <option value="default">الترتيب الموصى به</option>
+                            <option value="low-high">السعر: من الأقل للأعلى</option>
+                            <option value="high-low">السعر: من الأعلى للأقل</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">الكل</button>
+                    <button class="filter-btn" data-filter="watches">الساعات السويسرية</button>
+                    <button class="filter-btn" data-filter="perfumes">العطور النيش</button>
+                    <button class="filter-btn" data-filter="accessories">الجلديات والإكسسوارات</button>
+                    <button class="filter-btn" data-filter="jewelry">المجوهرات الراقية</button>
+                </div>
             </div>
 
             <!-- شبكة المنتجات -->
             <div class="product-grid" id="main-grid"></div>
         </section>
 
-        <!-- النشرة البريدية (نادي النخبة) -->
-        <section class="newsletter reveal">
-            <div class="newsletter-content">
-                <h2>انضم لنادي النخبة</h2>
-                <p>كن أول من يعلم عن وصول القطع النادرة والإصدارات المحدودة الحصرية.</p>
-                <div class="newsletter-form">
-                    <input type="email" placeholder="أدخل بريدك الإلكتروني هنا...">
-                    <button class="btn-gold">اشتراك</button>
+        <!-- قسم آراء عملاء النخبة -->
+        <section class="reviews-section section-padding" id="reviews-section">
+            <h2 class="section-title reveal">ماذا يقول <span>عملاؤنا</span></h2>
+            <div class="reviews-grid reveal">
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"تجربة تسوق تفوق الوصف. التغليف الملكي وسرعة التوصيل وشهادات الأصالة جعلتني زبوناً دائماً لـ Azz Luxury."</p>
+                    <h4 class="client-name">- رجل أعمال، الجزائر العاصمة</h4>
+                </div>
+                <div class="review-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="review-text">"اشتريت ساعة رولكس صبمارينر، الخدمة كانت بمنتهى الاحترافية والشفافية. شكراً للقائمين على هذا الصرح العظيم."</p>
+                    <h4 class="client-name">- دكتور جراح، وهران</h4>
                 </div>
             </div>
         </section>
@@ -94,7 +136,7 @@
     <!-- صفحة تفاصيل المنتج -->
     <main id="product-page" class="page">
         <div class="product-details-container reveal" id="product-details-container">
-            <!-- التفاصيل تضاف عبر جافاسكربت -->
+            <!-- التفاصيل تضاف ديناميكياً -->
         </div>
         
         <section class="related-products section-padding">
@@ -106,7 +148,7 @@
     <!-- واجهة السلة (Sidebar) -->
     <div class="cart-sidebar" id="cart-sidebar">
         <div class="cart-header">
-            <h3>سلة المشتريات <i class="fas fa-shopping-cart"></i></h3>
+            <h3>سلة المشتريات <i class="fas fa-shopping-bag"></i></h3>
             <i class="fas fa-times close-cart" onclick="toggleCart()"></i>
         </div>
         <div class="cart-items" id="cart-items">
@@ -114,10 +156,10 @@
         </div>
         <div class="cart-footer">
             <div class="cart-total">
-                <span>الإجمالي:</span>
+                <span>الإجمالي الإجمالي:</span>
                 <span id="total-price" style="color: var(--gold);">0 د.ج</span>
             </div>
-            <button class="btn-gold full-width hover-glow" style="font-size: 1.2rem; padding: 18px;">تأكيد وإتمام الطلب</button>
+            <button class="btn-gold full-width hover-glow" style="font-size: 1.2rem; padding: 18px;" onclick="checkout()">الانتقال للدفع الآمن <i class="fas fa-lock" style="margin-right: 8px;"></i></button>
         </div>
     </div>
     <div class="overlay" id="overlay" onclick="toggleCart()"></div>
@@ -130,27 +172,36 @@
         <div class="footer-content reveal">
             <div class="footer-brand">
                 <h3>Azz <span>Luxury</span></h3>
-                <p>تجسيد حي للفخامة والرقي. نحن لا نبيع المنتجات، بل نقدم إرثاً يتناقله الأجيال وقطعاً فنية تروي قصة نجاحك.</p>
+                <p>تجسيد حي للفخامة والرقي. نحن لا نبيع المنتجات، بل نقدم إرثاً يتناقله الأجيال وقطعاً فنية تروي قصة نجاحك وتميزك.</p>
             </div>
             <div class="footer-links">
-                <h4>روابط سريعة</h4>
+                <h4>استكشف</h4>
                 <ul>
                     <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
-                    <li><a href="#shop-section" onclick="showPage('home')">الكتالوج</a></li>
+                    <li><a href="#shop-section" onclick="showPage('home')">التشكيلة الجديدة</a></li>
+                    <li><a href="#">نادي النخبة VIP</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>خدمة العملاء</h4>
+                <ul>
                     <li><a href="#">الشروط والأحكام</a></li>
+                    <li><a href="#">سياسة الاسترجاع الميسرة</a></li>
+                    <li><a href="#">تتبع الشحنة</a></li>
                 </ul>
             </div>
             <div class="footer-social">
-                <h4>تواصل معنا</h4>
+                <h4>كن على تواصل</h4>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-instagram"></i></a>
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom reveal">
-            <p>&copy; 2026 Azz Luxury. جميع الحقوق محفوظة.</p>
-            <p class="developer-credit">برمجة وتصميم: <span class="dev-name">عزالدين قبي - Azzeddine Gobbi</span></p>
+            <p>&copy; 2026 Azz Luxury. جميع الحقوق محفوظة للعلامة التجارية.</p>
+            <p class="developer-credit">بُنيت هذه التحفة الرقمية بواسطة: <span class="dev-name">عزالدين قبي - Azzeddine Gobbi</span></p>
         </div>
     </footer>
 
