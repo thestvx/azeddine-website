@@ -24,7 +24,7 @@
         </div>
     </nav>
 
-    <!-- الصفحة الرئيسية والمتجر (مدموجة) -->
+    <!-- الصفحة الرئيسية والمتجر (مدموجة لتعمل الفلاتر بدون مشاكل) -->
     <main id="home-page" class="page active">
         <section class="hero">
             <div class="hero-content reveal">
@@ -40,19 +40,20 @@
             
             <div class="filter-bar reveal">
                 <button class="filter-btn active" data-filter="all">الكل</button>
-                <button class="filter-btn" data-filter="watches">الساعات السويسرية</button>
-                <button class="filter-btn" data-filter="perfumes">العطور النيش</button>
-                <button class="filter-btn" data-filter="accessories">الإكسسوارات الفاخرة</button>
+                <button class="filter-btn" data-filter="watches">الساعات</button>
+                <button class="filter-btn" data-filter="perfumes">العطور</button>
+                <button class="filter-btn" data-filter="accessories">الإكسسوارات</button>
                 <button class="filter-btn" data-filter="jewelry">المجوهرات</button>
             </div>
 
+            <!-- الحاوية التي ستظهر فيها المنتجات -->
             <div class="product-grid" id="main-grid"></div>
         </section>
 
         <section class="promo reveal">
             <div class="promo-box">
                 <h2>لمسة من الفخامة الحقيقية</h2>
-                <p>اكتشف مجموعتنا المختارة بعناية من الساعات السويسرية والعطور الفرنسية النادرة المرفقة بشهادات الأصالة.</p>
+                <p>اكتشف مجموعتنا المختارة بعناية من الساعات السويسرية والعطور الفرنسية النادرة.</p>
             </div>
         </section>
     </main>
@@ -60,11 +61,11 @@
     <!-- صفحة تفاصيل المنتج -->
     <main id="product-page" class="page">
         <div class="product-details-container reveal" id="product-details-container">
-            <!-- التفاصيل تضاف عبر JS -->
+            <!-- التفاصيل تضاف هنا -->
         </div>
         
         <section class="related-products section-padding">
-            <h2 class="section-title reveal">خيارات نخبوية مشابهة</h2>
+            <h2 class="section-title reveal">خيارات مشابهة</h2>
             <div class="product-grid" id="related-grid"></div>
         </section>
     </main>
@@ -75,15 +76,13 @@
             <h3>سلة المشتريات</h3>
             <i class="fas fa-times close-cart" onclick="toggleCart()"></i>
         </div>
-        <div class="cart-items" id="cart-items">
-            <!-- المنتجات تضاف عبر JS -->
-        </div>
+        <div class="cart-items" id="cart-items"></div>
         <div class="cart-footer">
             <div class="cart-total">
                 <span>الإجمالي:</span>
                 <span id="total-price">0 د.ج</span>
             </div>
-            <button class="btn-gold full-width hover-glow">إتمام الطلب بأمان</button>
+            <button class="btn-gold full-width hover-glow">إتمام الطلب</button>
         </div>
     </div>
     <div class="overlay" id="overlay" onclick="toggleCart()"></div>
@@ -93,22 +92,13 @@
         <div class="footer-content reveal">
             <div class="footer-brand">
                 <h3>Azz <span>Luxury</span></h3>
-                <p>وجهتك الأولى لاقتناء القطع الأصلية من أعتى دور الأزياء والمجوهرات العالمية. نضمن لك أصالة كل قطعة مع شهادات الاعتماد الدولية.</p>
+                <p>وجهتك الأولى لاقتناء القطع الأصلية من أعتى دور الأزياء والمجوهرات العالمية. نضمن لك أصالة كل قطعة.</p>
             </div>
             <div class="footer-links">
                 <h4>روابط سريعة</h4>
                 <ul>
                     <li><a href="#" onclick="showPage('home')">الرئيسية</a></li>
                     <li><a href="#shop-section" onclick="showPage('home')">الكتالوج</a></li>
-                    <li><a href="#">الشهادات والضمان</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>الخدمات</h4>
-                <ul>
-                    <li><a href="#">سياسة الاسترجاع (VIP)</a></li>
-                    <li><a href="#">الشحن والتأمين المجاني</a></li>
-                    <li><a href="#">طرق الدفع الآمنة</a></li>
                 </ul>
             </div>
             <div class="footer-social">
