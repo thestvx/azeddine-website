@@ -1,4 +1,4 @@
-// بيانات المنتجات بأسماء دقيقة تتطابق حرفياً مع الصور وأسعار واقعية بالسوق (دينار جزائري)
+// بيانات المنتجات بأسماء دقيقة تتطابق حرفياً مع الصور (صور دقيقة للماركات)
 const products = [
     { 
         id: 1, 
@@ -6,35 +6,35 @@ const products = [
         name: "ساعة رولكس صبمارينر", 
         price: 3200000, 
         category: "watches", 
-        img: "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=800", // صورة ساعة Rolex حقيقية
         desc: "ساعة رولكس الأيقونية مينا أسود مع سوار أويستر الفولاذي الفاخر. تصميم كلاسيكي يعكس قوة وأناقة الساعات السويسرية، مثالية للرجل العصري." 
     },
     { 
         id: 2, 
         brand: "Tom Ford",
-        name: "عطر توم فورد عود وود - 100 مل", 
+        name: "عطر توم فورد - 100 مل", 
         price: 65000, 
         category: "perfumes", 
-        img: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&q=80&w=800", 
-        desc: "عطر (Oud Wood) من توم فورد برايفت بليند. توليفة خشبية نادرة جداً تعتمد على خشب العود المعتق، مع مزيج ساحر يمنحك هالة من الفخامة والدفء." 
+        img: "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&q=80&w=800", // زجاجة عطر Tom Ford
+        desc: "عطر من توم فورد برايفت بليند. توليفة نادرة جداً تعتمد على الزيوت العطرية النقية، مع مزيج ساحر يمنحك هالة من الفخامة والدفء." 
     },
     { 
         id: 3, 
         brand: "Louis Vuitton",
-        name: "حقيبة سفر لويس فيتون كيبال", 
+        name: "حقيبة سفر لويس فيتون", 
         price: 420000, 
         category: "accessories", 
-        img: "https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1614179689702-355944cd0918?auto=format&fit=crop&q=80&w=800", // حقيبة بنمط Louis Vuitton
         desc: "حقيبة السفر الجلدية الأيقونية من لويس فيتون. مصنوعة من الجلد الفاخر باللون البني الكلاسيكي الذي يجسد الأناقة أثناء التنقل والسفر." 
     },
     { 
         id: 4, 
-        brand: "Ray-Ban / Cartier",
-        name: "نظارات شمسية كلاسيكية", 
+        brand: "Cartier",
+        name: "نظارات شمسية كارتييه", 
         price: 85000, 
         category: "accessories", 
-        img: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800", 
-        desc: "نظارات شمسية كلاسيكية بتصميم فريمر عصري (Retro). عدسات عالية الجودة مضادة للانعكاس توفر حماية فائقة وتضفي لمسة من الغموض والأناقة." 
+        img: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800", // نظارات فخمة
+        desc: "نظارات شمسية كلاسيكية بتصميم فريمر عصري. عدسات عالية الجودة مضادة للانعكاس توفر حماية فائقة وتضفي لمسة من الغموض والأناقة." 
     },
     { 
         id: 5, 
@@ -42,16 +42,16 @@ const products = [
         name: "ساعة أوديمار بيغيه رويال أوك", 
         price: 7500000, 
         category: "watches", 
-        img: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&q=80&w=800", // ساعة AP
         desc: "تحفة أوديمار بيغيه (Royal Oak). هيكل مثمن الأضلاع من الفولاذ المقاوم للصدأ المصقول يدوياً مع مسامير بارزة، تمثل قمة التعقيد الرياضي الفاخر." 
     },
     { 
         id: 6, 
-        brand: "Amouage / Niche",
+        brand: "Niche Collection",
         name: "مجموعة عطور النيش الفاخرة", 
         price: 185000, 
         category: "perfumes", 
-        img: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1595535373192-fc8938bcbbbb?auto=format&fit=crop&q=80&w=800", // مجموعة عطور
         desc: "مجموعة حصرية من العطور الملكية المعبأة في زجاجات كريستالية راقية. تنوع مثالي يناسب فترات الصباح، المساء، والمناسبات الرسمية الكبرى." 
     },
     { 
@@ -60,7 +60,7 @@ const products = [
         name: "محفظة جلدية إنترشياتو", 
         price: 110000, 
         category: "accessories", 
-        img: "https://images.unsplash.com/photo-1627123424574-724758594e93?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1606503153255-59d8b8b82176?auto=format&fit=crop&q=80&w=800", // محفظة جلد
         desc: "محفظة رجالية من بوتيغا فينيتا، مصنوعة يدوياً باستخدام تقنية النسج (Intrecciato) الحصرية من أرقى أنواع جلد العجل الناعم الأسود الفاخر." 
     },
     { 
@@ -69,7 +69,7 @@ const products = [
         name: "ساعة باتيك فيليب نوتيلوس", 
         price: 18000000, 
         category: "watches", 
-        img: "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&q=80&w=800", // ساعة فاخرة
         desc: "الأسطورة (Nautilus)، إحدى أندر الساعات وأكثرها طلباً في العالم. تصميم انسيابي فضي خلاب مرصع بلمسات ألماسية دقيقة، استثمار تتوارثه الأجيال." 
     },
     { 
@@ -78,7 +78,7 @@ const products = [
         name: "خاتم تيفاني ألماس سوليتير", 
         price: 1250000, 
         category: "jewelry", 
-        img: "https://images.unsplash.com/photo-1605100804763-247f66126e28?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1605100804763-247f66126e28?auto=format&fit=crop&q=80&w=800", // خاتم الماس
         desc: "خاتم سوليتير كلاسيكي مرصع بحجر ألماس حر فائق النقاء. مصاغ بعناية فائقة على قاعدة من البلاتين ليبرز بريق الألماسة ويخطف كل الأنظار." 
     },
     { 
@@ -87,7 +87,7 @@ const products = [
         name: "قلادة فينتاج ألهامبرا", 
         price: 580000, 
         category: "jewelry", 
-        img: "https://images.unsplash.com/photo-1599643478524-fb66f7fa0656?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1599643478524-fb66f7fa0656?auto=format&fit=crop&q=80&w=800", // قلادة
         desc: "قلادة (Vintage Alhambra) الفاخرة، مصممة على شكل زهرة البرسيم الرباعية التي ترمز للحظ، متدلية بأناقة من سلسلة ذهبية رقيقة ولامعة." 
     },
     { 
@@ -96,7 +96,7 @@ const products = [
         name: "عطر ديور سوفاج إلكسير - 100 مل", 
         price: 45000, 
         category: "perfumes", 
-        img: "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1590156546946-cb55b8d23df8?auto=format&fit=crop&q=80&w=800", // عطر ديور
         desc: "الإصدار الأكثر تركيزاً (Elixir) بلمسة زرقاء داكنة جذابة. يجمع بين التوابل الحارة، اللافندر، والأخشاب الغنية ليصنع بصمة عطرية رجولية قوية." 
     },
     { 
@@ -105,7 +105,7 @@ const products = [
         name: "حزام هيرميس الجلدي الفاخر", 
         price: 185000, 
         category: "accessories", 
-        img: "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&q=80&w=800", 
+        img: "https://images.unsplash.com/photo-1624222247344-550fb60583dc?auto=format&fit=crop&q=80&w=800", // حزام فاخر
         desc: "حزام كلاسيكي فاخر من هيرميس. مصنوع من الجلد الطبيعي المقاوم للخدش، ليناسب جميع إطلالاتك الرسمية واليومية ويضيف لها هيبة ووقاراً." 
     }
 ];
@@ -122,7 +122,7 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// مراقب الانيميشن الخاص بالعناوين فقط (تم فصله عن الكروت لحل مشكلة عدم ظهور الفلترة)
+// مراقب الانيميشن للعناوين والنصوص فقط
 const revealObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -160,22 +160,22 @@ function showPage(pageId) {
     }, 100);
 }
 
-// دالة لتنسيق السعر بالدينار الجزائري
+// تنسيق السعر
 function formatPrice(price) {
     return price.toLocaleString('en-US') + ' د.ج';
 }
 
-// عرض المنتجات (مع حل مشكلة عدم الظهور في فئة الكل والاعتماد الكامل على CSS Keyframes)
-function renderProducts(gridId, productsList, limit = null) {
+// عرض المنتجات الديناميكي (هنا تم حل مشكلة ظهور "الكل" بشكل قطعي)
+function renderProducts(gridId, productsList) {
     const grid = document.getElementById(gridId);
     if (!grid) return;
+    
+    // تفريغ القائمة قبل إضافة المنتجات الجديدة
     grid.innerHTML = '';
     
-    const items = limit ? productsList.slice(0, limit) : productsList;
-
-    items.forEach((product, index) => {
-        const delay = (index * 0.1); // تأخير متتابع بسيط للأنيميشن
-        // أضفنا onerror كإجراء احتياطي إذا لم تظهر الصورة
+    // إنشاء الكروت وإضافتها
+    productsList.forEach((product, index) => {
+        const delay = index * 0.08; // سرعة ظهورة متتالية وجميلة
         const cardHtml = `
             <div class="product-card" style="animation-delay: ${delay}s" onclick="viewProduct(${product.id})">
                 <span class="product-brand">${product.brand}</span>
@@ -197,25 +197,23 @@ function renderProducts(gridId, productsList, limit = null) {
 
 // التهيئة عند تحميل الصفحة
 document.addEventListener('DOMContentLoaded', () => {
-    // عرض 6 منتجات في الرئيسية
-    renderProducts('featured-grid', products, 6);
-    
-    // عرض جميع المنتجات في صفحة المتجر
-    renderProducts('shop-grid', products);
+    // عرض جميع المنتجات (الـ 12 منتج) في الصفحة الرئيسية مباشرة
+    renderProducts('main-grid', products);
 
-    // برمجة أزرار الفلترة
+    // برمجة أزرار الفلترة لتعمل بشكل فوري على الشبكة الرئيسية
     const filterBtns = document.querySelectorAll('.filter-btn');
     filterBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
+            // إزالة كلاس النشط من كل الأزرار وإضافته للزر المضغوط
             filterBtns.forEach(b => b.classList.remove('active'));
             e.target.classList.add('active');
             
             const filter = e.target.dataset.filter;
             if (filter === 'all') {
-                renderProducts('shop-grid', products);
+                renderProducts('main-grid', products); // يظهر كل الـ 12
             } else {
                 const filtered = products.filter(p => p.category === filter);
-                renderProducts('shop-grid', filtered);
+                renderProducts('main-grid', filtered); // يظهر المفلتر فقط
             }
         });
     });
@@ -286,7 +284,7 @@ function updateCart() {
             
             cartItemsContainer.innerHTML += `
                 <div class="cart-item" id="cart-item-${item.id}">
-                    <img src="${item.img}" alt="${item.name}" onerror="this.src='https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=100'">
+                    <img src="${item.img}" alt="${item.name}">
                     <div class="cart-item-info">
                         <div class="cart-item-title">${item.brand} | ${item.name}</div>
                         <div style="color: var(--text-muted); font-size: 0.95rem; margin-top: 5px;">الكمية: ${item.quantity}</div>
@@ -319,7 +317,7 @@ function viewProduct(id) {
     container.innerHTML = `
         <div class="pd-image">
             <span class="product-brand" style="font-size: 1rem; padding: 8px 20px;">${product.brand}</span>
-            <img src="${product.img}" alt="${product.name}" onerror="this.src='https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=800'">
+            <img src="${product.img}" alt="${product.name}">
         </div>
         <div class="pd-info">
             <h4 class="pd-brand">${product.brand}</h4>
@@ -343,8 +341,6 @@ function viewProduct(id) {
     // المنتجات المشابهة
     const relatedProducts = products.filter(p => p.category === product.category && p.id !== id);
     const displayRelated = relatedProducts.length > 0 ? relatedProducts : products.filter(p => p.id !== id);
-    
-    // سحب 3 منتجات عشوائية لعرضها في الأسفل
     const shuffled = displayRelated.sort(() => 0.5 - Math.random()).slice(0, 3);
     
     renderProducts('related-grid', shuffled);
