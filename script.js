@@ -9,12 +9,12 @@ const products = [
     { id: 6, brand: "Richard Mille", name: "ساعة ريتشارد ميل", price: 25000000, category: "watches", img: "images/watches/06.jpg", desc: "قمة التعقيد الميكانيكي والتصميم الرياضي الجريء، مصنوعة من أخف المواد وأصلبها لتجربة لا تضاهى." },
 
     // قسم العطور (6 صور)
-    { id: 7, brand: "Tom Ford", name: "عطر عود وود", price: 65000, category: "perfumes", img: "images/parfums/01.jpg", desc: "توليفة خشبية نادرة جداً من برايفت بليند، تعتمد على خشب العود المعتق لتمنحك هالة من الفخامة الدافئة." },
-    { id: 8, brand: "Chanel", name: "عطر كوكو نوار", price: 48000, category: "perfumes", img: "images/parfums/02.jpg", desc: "عطر نسائي راقي بتركيبة فريدة داخل زجاجة سوداء ملكية، يمزج بين الجرأة والجاذبية والأنوثة الطاغية." },
-    { id: 9, brand: "Dior", name: "عطر سوفاج إلكسير", price: 45000, category: "perfumes", img: "images/parfums/03.jpg", desc: "الإصدار الأكثر تركيزاً وعمقاً. يجمع بين التوابل الحارة والأخشاب الغنية ليصنع بصمة عطرية قوية لا تُنسى." },
-    { id: 10, brand: "Creed", name: "عطر أفينتوس", price: 75000, category: "perfumes", img: "images/parfums/04.jpg", desc: "عطر النبلاء والملوك، يتميز بنفحات منعشة وقاعدة خشبية صلبة تعكس القوة والنجاح والثقة." },
-    { id: 11, brand: "Maison Francis", name: "باكارات روج 540", price: 95000, category: "perfumes", img: "images/parfums/05.jpg", desc: "عطر نيش آسر يمزج بين الياسمين، الزعفران، وأخشاب الأرز لثبات يدوم طويلاً وانتشار يلفت الأنظار." },
-    { id: 12, brand: "Amouage", name: "عطر إنترلود", price: 85000, category: "perfumes", img: "images/parfums/06.jpg", desc: "عطر شرقي فخم يجسد الفخامة العمانية بأرقى الزيوت العطرية الملكية والنفحات الدخانية العميقة." },
+    { id: 7, brand: "Emporio Armani", name: "عطر سترونجر ويذ يو إنتنسلي", price: 65000, category: "perfumes", img: "images/parfums/01.jpg", desc: "توليفة خشبية نادرة جداً من برايفت بليند، تعتمد على خشب العود المعتق لتمنحك هالة من الفخامة الدافئة." },
+    { id: 8, brand: "Creed", name: "عطر كريد أفينتوس", price: 48000, category: "perfumes", img: "images/parfums/02.jpg", desc: "عطر نسائي راقي بتركيبة فريدة داخل زجاجة سوداء ملكية، يمزج بين الجرأة والجاذبية والأنوثة الطاغية." },
+    { id: 9, brand: "Dior", name: "عطر ديور هوم إنتنس", price: 45000, category: "perfumes", img: "images/parfums/03.jpg", desc: "الإصدار الأكثر تركيزاً وعمقاً. يجمع بين التوابل الحارة والأخشاب الغنية ليصنع بصمة عطرية قوية لا تُنسى." },
+    { id: 10, brand: "Tom Ford", name: "عطر توم فورد أومبري ليذر", price: 75000, category: "perfumes", img: "images/parfums/04.jpg", desc: "عطر النبلاء والملوك، يتميز بنفحات منعشة وقاعدة خشبية صلبة تعكس القوة والنجاح والثقة." },
+    { id: 11, brand: "Dior", name: "عطر سوفاج", price: 95000, category: "perfumes", img: "images/parfums/05.jpg", desc: "عطر نيش آسر يمزج بين الياسمين، الزعفران، وأخشاب الأرز لثبات يدوم طويلاً وانتشار يلفت الأنظار." },
+    { id: 12, brand: "Versace", name: "عطر فيرساتشي إيروس", price: 85000, category: "perfumes", img: "images/parfums/06.jpg", desc: "عطر شرقي فخم يجسد الفخامة العمانية بأرقى الزيوت العطرية الملكية والنفحات الدخانية العميقة." },
 
     // قسم الحقائب الفاخرة (9 صور)
     { id: 13, brand: "Louis Vuitton", name: "حقيبة كيبال", price: 420000, category: "accessories", img: "images/handbags/01.jpg", desc: "حقيبة السفر الجلدية الأيقونية من لويس فيتون بمساحة رحبة وتصميم يجسد أناقة التنقل الراقي." },
